@@ -7,7 +7,7 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: white;
+  background-color: transparent;
   background-position: cover;
   background-attachment: fixed;
   background-position: 80%;
@@ -16,8 +16,9 @@ header {
 header h1 {
   font-weight: bold;
   font-size: 36px;
-  color: black;
+  color: teal;
   margin: 25px;
+  font-style: italic;
 }
 
 header nav {
@@ -36,7 +37,9 @@ header nav ul {
 header nav ul li {
   padding: 10px 15px;
   flex-wrap: wrap;
-  font-size: 20px;
+  font-size: 25px;
+  color: teal;
+  font-style: italic;
 
 }
   
@@ -49,6 +52,10 @@ header nav ul li {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-image: url('../assets/san_francisco_fog_lights_bridge_58439_2048x1152.jpeg');
+    background-position: 80%;
+    background-size: cover;
+    background-position: center;
   }
   
   /* <main> */
@@ -62,16 +69,17 @@ header nav ul li {
   
   /* target <h2> element inside of <main> */
   main h2 {
-    color: #fb3e55;
+    color: #393b4f;
     /* set padding to 0 top, 10 right and left, and 20 bottom */
     padding: 0 10px 20px;
     border-bottom: 3px solid #393b4f;
     text-align: center;
+    font-size: 30px;
   }
 
   main div p {
     text-align: left;
-    font-size: 30px;
+    font-size: 26px;
   }
   
   /* flex parent */
@@ -97,7 +105,7 @@ header nav ul li {
     font-weight: bold;
   
     /* put space between each one vertically */
-    margin-bottom: 5px;
+    margin-bottom: 20px;
   
     /* for files in local images folder, use url('../images/file-name.jpg') */
     background-image: url('../assets/Image\ 4-3-21\ at\ 6.15\ PM.jpg');
@@ -138,7 +146,7 @@ header nav ul li {
     background-color: #393b4f;
     font-size: 22px;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     background-image: url('../assets/download.jpeg');
     background-size: cover;
   
@@ -241,16 +249,21 @@ header nav ul li {
   footer {
     display: flex;
     width: 100%;
-    background-color: #5f5f63;
+    background-color: #a8adba;
     color: #fb3e55;
     margin-top: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-position: cover;
+    background-attachment: fixed;
+    background-position: 80%;
   }
 
   footer h1 {
     font-weight: bold;
     font-size: 36px;
     color: black;
-    margin: 15px;
+    margin: 25px;
   }
   
   footer nav {
