@@ -284,3 +284,32 @@ header nav ul li {
     flex-wrap: wrap;
     font-size: 20px;
   }
+
+  @media scren and (max-width: 768px) {
+
+    main {
+      padding: 30px 15px;
+    }
+
+    main h2 {
+      flex: 1 100%;
+      text-align: center;
+    }
+
+    #my-projects{
+      flex: 2 100%;
+      text-align: center;
+    }
+
+    .flex-container {
+      flex: 2 100%;
+      text-align: center;
+      justify-content: center;
+    }
+
+
+
+
+
+
+  }
