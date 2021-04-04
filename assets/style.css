@@ -1,0 +1,273 @@
+/* tell browser to fix box model calculations */
+* {
+    box-sizing: border-box;
+  }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: white;
+  background-position: cover;
+  background-attachment: fixed;
+  background-position: 80%;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: black;
+  margin: 25px;
+}
+
+header nav {
+  float: right;
+  margin: 5px;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li {
+  padding: 10px 15px;
+  flex-wrap: wrap;
+  font-size: 20px;
+
+}
+  
+  /* get rid of browser's margins and set background color */
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #70737b;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* <main> */
+  main {
+    width: 100%;
+    /* center on page using auto for left/right */
+    margin: 50px auto;
+    /* add padding so html inside has space */
+    padding: 20px;
+  }
+  
+  /* target <h2> element inside of <main> */
+  main h2 {
+    color: #fb3e55;
+    /* set padding to 0 top, 10 right and left, and 20 bottom */
+    padding: 0 10px 20px;
+    border-bottom: 3px solid #393b4f;
+    text-align: center;
+  }
+
+  main div p {
+    text-align: left;
+    font-size: 30px;
+  }
+  
+  /* flex parent */
+  .flex-container {
+    /* create flexbox */
+    display: flex;
+    /* instruct it to break onto next line if it runs out of space */
+    flex-wrap: wrap;
+    /* put all unused space between items */
+    justify-content:space-evenly;
+    width: 100%;
+  }
+  
+  /* flex child */
+  .flex-item {
+    /* make each one 45%, putting 10% between each element on the page */
+    width: 45%;
+    /* rounded corners */
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    background-color: #393b4f;
+    font-size: 22px;
+    font-weight: bold;
+  
+    /* put space between each one vertically */
+    margin-bottom: 5px;
+  
+    /* for files in local images folder, use url('../images/file-name.jpg') */
+    background-image: url('../assets/Image\ 4-3-21\ at\ 6.15\ PM.jpg');
+  
+    /* tell background to fit box no matter what */
+    background-size: cover;
+  
+    /* crop it at the center */
+    background-position: center;
+  
+    /* padding top and bottom 20px, 0 for left/right */
+    padding: 0 0;
+  
+    /* set minimum heigh value so there's room */
+    min-height: 250px;
+  
+    /* rather than use position...use flexbox and create column instead of row */
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* for text area inside of flex item */
+  .flex-item span {
+    /* pushes element to bottom of flex item */
+    margin-top: auto;
+    width: 100%;
+    background-color: #a8adba;
+    color: #393b4f;
+    padding: 10px 5px;
+    text-align: center;
+  }
+
+  .flex-item1 {
+    width: 45%;
+    /* rounded corners */
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    background-color: #393b4f;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    background-image: url('../assets/download.jpeg');
+    background-size: cover;
+  
+    /* crop it at the center */
+    background-position: center;
+  
+    /* padding top and bottom 20px, 0 for left/right */
+    padding: 0 0;
+  
+    /* set minimum heigh value so there's room */
+    min-height: 250px;
+  
+    /* rather than use position...use flexbox and create column instead of row */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-item1 span {
+    /* pushes element to bottom of flex item */
+    margin-top: auto;
+    width: 100%;
+    background-color: #a8adba;
+    color: #393b4f;
+    padding: 10px 5px;
+    text-align: center;
+  }
+
+  .flex-item2 {
+    width: 45%;
+    /* rounded corners */
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    background-color: #393b4f;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    background-image: url('../assets/fighting-robots-red-blue_1600.jpeg');
+    background-size: cover;
+  
+    /* crop it at the center */
+    background-position: center;
+  
+    /* padding top and bottom 20px, 0 for left/right */
+    padding: 0 0;
+  
+    /* set minimum heigh value so there's room */
+    min-height: 250px;
+  
+    /* rather than use position...use flexbox and create column instead of row */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-item2 span {
+    /* pushes element to bottom of flex item */
+    margin-top: auto;
+    width: 100%;
+    background-color: #a8adba;
+    color: #393b4f;
+    padding: 10px 5px;
+    text-align: center;
+  }
+
+  .flex-item3 {
+    width: 45%;
+    /* rounded corners */
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    background-color: #393b4f;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    background-image: url('../assets/secret.jpeg');
+    background-size: cover;
+  
+    /* crop it at the center */
+    background-position: center;
+  
+    /* padding top and bottom 20px, 0 for left/right */
+    padding: 0 0;
+  
+    /* set minimum heigh value so there's room */
+    min-height: 250px;
+  
+    /* rather than use position...use flexbox and create column instead of row */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-item3 span {
+    /* pushes element to bottom of flex item */
+    margin-top: auto;
+    width: 100%;
+    background-color: #a8adba;
+    color: #393b4f;
+    padding: 10px 5px;
+    text-align: center;
+  }
+  
+  footer {
+    display: flex;
+    width: 100%;
+    background-color: #5f5f63;
+    color: #fb3e55;
+    margin-top: auto;
+  }
+
+  footer h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: black;
+    margin: 15px;
+  }
+  
+  footer nav {
+    float: right;
+    margin: 7px;
+  }
+
+  footer nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+  footer nav ul li {
+    padding: 10px 15px;
+    flex-wrap: wrap;
+    font-size: 20px;
+  }
