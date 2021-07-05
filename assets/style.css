@@ -82,41 +82,68 @@ header nav ul li {
     font-size: 26px;
   }
 
-  .box1 {
-    /* make each one 45%, putting 10% between each element on the page */
+  .wine {
     width: 45%;
-    /* rounded corners */
     border-radius: 5px;
     border: 1px solid #ffffff;
     background-color: #393b4f;
     font-size: 22px;
     font-weight: bold;
   
-    /* put space between each one vertically */
+    
     margin-bottom: 20px;
-  
-    /* for files in local images folder, use url('../images/file-name.jpg') */
-    background-image: url('../assets/sig-start.png');
-  
-    /* tell background to fit box no matter what */
+    background-image: url('../assets/wine.jpg');
     background-size: cover;
   
-    /* crop it at the center */
     background-position: center;
   
-    /* padding top and bottom 20px, 0 for left/right */
+    
     padding: 0 0;
   
-    /* set minimum heigh value so there's room */
+    
     min-height: 250px;
   
-    /* rather than use position...use flexbox and create column instead of row */
+    
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .wine span {
+    margin-top: auto;
+    width: 100%;
+    background-color: #a8adba;
+    color: #393b4f;
+    padding: 10px 5px;
+    text-align: center;
+  }
+
+  .box1 {
+    width: 45%;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    background-color: #393b4f;
+    font-size: 22px;
+    font-weight: bold;
+  
+    
+    margin-bottom: 20px;
+    background-image: url('../assets/sig-start.png');
+    background-size: cover;
+  
+    background-position: center;
+  
+    
+    padding: 0 0;
+  
+    
+    min-height: 250px;
+  
+    
     display: flex;
     flex-direction: column;
   }
   
   .box1 span {
-    /* pushes element to bottom of flex item */
     margin-top: auto;
     width: 100%;
     background-color: #a8adba;
